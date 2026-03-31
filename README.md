@@ -14,7 +14,19 @@ Durante o desenvolvimento, foram aplicados conceitos importantes como:
 - Tratamento de exceções HTTP (200 OK, 204 No Content, 404 Not Found, 400 Bad Request)
 
 O projeto tem como foco consolidar fundamentos de desenvolvimento back-end e servirá como base para futuras aplicações full stack.
+
+## 📚 Aprendizados
+
+Neste projeto eu aprendi:
+
+- Estruturação de APIs REST com Spring Boot
+- Uso de JPA/Hibernate para persistência de dados
+- Tratamento de exceções HTTP
+- Organização de código com princípios SOLID
+- Testes de endpoints utilizando Postman
 ## Modelo de Dominio
+
+
 ![Domain Model](https://github.com/Malenia2612/Assets/blob/main/DomainModel.png)
 
 ## Testes da API
@@ -77,6 +89,12 @@ cd trabalho-springboot4-jpa
 - CourseApplication.java → Run As → Spring Boot App  
 
 ## Configuração importante
+
+## 🌐 Endpoints
+
+A API roda localmente em:
+http://localhost:8080
+
 Antes de executar o projeto, verifique se os arquivos de configuração estão corretos.
 ### application.properties
 ```bash
@@ -84,8 +102,17 @@ spring.application.name=course
 spring.profiles.active=test
 spring.jpa.open-in-view=true
 ```
+
+### No H2 console configurar usuario e senha e o nome do banco de dados
+## 🗄️ Banco de dados H2
+
+Acesse o console do banco em:
+http://localhost:8080/h2-console
+
+JDBC URL: jdbc:h2:mem:testdb  
+User: sa  
+Password: (vazio)
 ### application-test.properties
-## No H2 console configurar usuario e senha e o nome do banco de dados
 ```bash
 # DATASOURCE
 spring.datasource.driverClassName=org.h2.Driver
